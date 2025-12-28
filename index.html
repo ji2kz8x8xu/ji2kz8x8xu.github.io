@@ -1,121 +1,299 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人簡介 | [您的姓名]</title>
-    <style>
-        /* 基本樣式設定 */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        /* 卡片容器 */
-        .container {
-            background: #fff;
-            max-width: 600px;
-            width: 90%;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        /* 頭像佔位符 */
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background-color: #ddd;
-            margin-bottom: 20px;
-            object-fit: cover;
-            border: 3px solid #007bff;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .subtitle {
-            color: #007bff;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .about {
-            text-align: left;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        /* 技能標籤 */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
-        }
-
-        .skill-tag {
-            background: #e1ecf4;
-            color: #39739d;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-
-        /* 聯絡按鈕 */
-        .contact-btn {
-            display: inline-block;
-            background: #007bff;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: background 0.3s;
-        }
-
-        .contact-btn:hover {
-            background: #0056b3;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <img src="https://via.placeholder.com/150" alt="個人照" class="profile-img">
-    
-    <h1>[您的姓名]</h1>
-    <div class="subtitle">[您的職位或目前身份，例如：軟體工程師 / 學生]</div>
-
-    <div class="about">
-        <h3>關於我</h3>
-        <p>
-            這裡可以填寫你的簡短自我介紹。例如：我熱衷於解決複雜的技術問題，專注於 Web 開發與機器學習。在閒暇之餘，我喜歡探索新科技或參與開源專案。
-        </p>
-    </div>
-
-    <div class="skills">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">HTML / CSS</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Git</span>
-    </div>
-
-    <a href="mailto:yourname@example.com" class="contact-btn">與我聯絡</a>
-</div>
-
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>林桂 (Lin, Gui) - 資訊工程履歷</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">林桂 Lin, Gui</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">專案作品</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">學歷</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">技能</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">研究發表</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">證照認證</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        林桂
+                        <span class="text-primary">Lin, Gui</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        中原大學資訊工程學系 · 0965-826-066 ·
+                        <a href="mailto:ji2kz8x8xu0@gmail.com">ji2kz8x8xu0@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">資訊工程系學生，專精於人工智慧與電腦視覺領域。擁有豐富的專案開發經驗，包括駕駛分心偵測系統、CPU設計與多種程式語言應用。目前正進行國際期刊論文投稿，致力於跨模態時空融合技術研究。學業成績優異（GPA 3.948/4.0，系排名前9.84%），具備C++、Python、Java等多種程式語言能力。</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://linkedin.com/in/gui-lin-966799358" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/ji2kz8x8xu" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">專案作品集 (Projects)</h2>
+                    <div class="project-card">
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">駕駛動作與注視區域之跨模態時空融合分心偵測技術</h3>
+                                <div class="subheading mb-3">畢業專題 - 國際期刊投稿中</div>
+                                <p>開發雙分支分心偵測框架，結合時序建模技術（MLP、TCN、Transformer）與跨模態融合機制。在Driving Monitoring Dataset測試集達到96.28%準確率。論文"Designing Dual-Modal Spatiotemporal Fusion Mechanisms for Distracted Driving Detection"已投稿至Signal, Image and Video Processing期刊（Springer Nature），目前審查中。</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2024 - 2025</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">5-Stage Pipeline CPU 設計</h3>
+                                <div class="subheading mb-3">硬體設計專案</div>
+                                <p>使用Verilog硬體描述語言實現完整的16道MIPS指令集處理器，包含五階段流水線架構設計，展現對計算機組織與數位邏輯設計的深度理解。</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">YOLOv7 結合俄羅斯方塊遊戲</h3>
+                                <div class="subheading mb-3">電腦視覺應用</div>
+                                <p>整合YOLOv7物件偵測模型實現即時手勢辨識系統，並將辨識結果應用於俄羅斯方塊遊戲控制，展現深度學習在互動式應用的實際運用能力。</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">拼圖自動還原系統</h3>
+                                <div class="subheading mb-3">演算法應用專案</div>
+                                <p>運用Python開發智能拼圖重建系統，採用Kruskal與Prim演算法結合最小生成樹(MST)理論，實現高效率的影像片段自動重組與還原。</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">ARM 組合語言專案</h3>
+                                <div class="subheading mb-3">低階程式設計</div>
+                                <p>使用ARM組合語言實現Julia Set碎形圖形的動態繪製與動畫處理，展現對低階程式設計與數學運算的精確掌握能力。</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2023</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">學歷與學術表現 (Education & Academic Performance)</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">中原大學 (Chung Yuan Christian University)</h3>
+                            <div class="subheading mb-3">資訊工程學系 (Computer Science and Engineering)</div>
+                            <div>學士學位 - Bachelor of Science</div>
+                            <p>總平均：89.23 | GPA：3.948/4.0 | 系排名：12/122 (前9.84%) | 班排名：8/62 (前12.9%)</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2022 - 2026</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">國立中正大學 (National Chung Cheng University)</h3>
+                            <div class="subheading mb-3">資訊工程學系 (Computer Science and Engineering)</div>
+                            <div>碩士學位 - Master of Science</div>
+                            <p>預計 2026 年 9 月入學</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2026 - 2028</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">獲獎紀錄與榮譽 (Awards & Honors)</h3>
+                            <div class="subheading mb-3">學術與競賽表現</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>111-1 書卷獎</li>
+                                <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>114學年度資工系專題實驗競賽 - 硬體組第一名 & 人氣投票獎</li>
+                                <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>中原大學微星盃 - 原力覺醒專題實作組人氣獎</li>
+                                <li><span class="fa-li"><i class="fas fa-medal text-warning"></i></span>專業學科優異獎：計算機概論(一)&(二)、組合語言與嵌入式系統、資料結構、計算機組織</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2022 - 2026</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">專業技能 (Skills)</h2>
+                    <div class="subheading mb-3">程式語言與開發工具 (Programming Languages & Tools)</div>
+                    <div class="dev-icons-with-labels mb-4">
+                        <div class="dev-icon-item">
+                            <i class="fab fa-python"></i>
+                            <div class="dev-icon-label">Python</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fas fa-code"></i>
+                            <div class="dev-icon-label">C++</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fab fa-java"></i>
+                            <div class="dev-icon-label">Java</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fas fa-microchip"></i>
+                            <div class="dev-icon-label">Verilog</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fas fa-cogs"></i>
+                            <div class="dev-icon-label">ARM Assembly</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fab fa-js-square"></i>
+                            <div class="dev-icon-label">JavaScript</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fab fa-html5"></i>
+                            <div class="dev-icon-label">HTML5</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="dev-icon-label">CSS3</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fab fa-git-alt"></i>
+                            <div class="dev-icon-label">Git</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fab fa-github"></i>
+                            <div class="dev-icon-label">GitHub</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fab fa-linux"></i>
+                            <div class="dev-icon-label">Linux</div>
+                        </div>
+                        <div class="dev-icon-item">
+                            <i class="fas fa-brain"></i>
+                            <div class="dev-icon-label">AI/ML</div>
+                        </div>
+                    </div>
+                    <div class="subheading mb-3">技術專長 (Technical Expertise)</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            程式語言：C++、C、Python、Java、Verilog、ARM Assembly
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            人工智慧：深度學習、電腦視覺、YOLOv7、Transformer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            硬體設計：數位邏輯設計、CPU架構、嵌入式系統
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            演算法：資料結構、動態規劃、圖論演算法、最小生成樹
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            系統程式：作業系統、多執行緒程式設計、效能最佳化
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Research-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">研究與發表 (Research & Publications)</h2>
+                    <div class="mb-4">
+                        <h4 class="mb-2">學術論文 (Academic Publications)</h4>
+                        <p><strong>論文題目：</strong>Designing Dual-Modal Spatiotemporal Fusion Mechanisms for Distracted Driving Detection</p>
+                        <p><strong>投稿期刊：</strong>Signal, Image and Video Processing (Springer Nature)</p>
+                        <p><strong>當前狀態：</strong>審查中 (Under Review，投稿日期：2025年10月12日)</p>
+                        <p><strong>作者身份：</strong>第一作者 (First Author)</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="mb-2">專業學科表現 (Academic Excellence)</h4>
+                        <p><strong>滿分科目：</strong>電路實驗、嵌入式系統實驗(一)、邏輯設計實驗(二)、計算機概論(二)</p>
+                        <p><strong>90分以上科目：</strong>線性代數(99)、計算機概論(一)(98)、組合語言與嵌入式系統(97)、演算法分析(96)、物件導向程式設計(95)、計算機組織(94)、資料結構與演算法(93)、作業系統(90)</p>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Certifications-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">證照與認證 (Certifications & Activities)</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            TOEIC 740分 (2025/06/08)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            CPE 大學程式能力檢定 前12% (2025/03/25)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            NVIDIA：AI for All: From Basics to GenAI Practice
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            NVIDIA：深度學習基礎理論與實踐
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Google Certified Educator Level 1
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            LinkedIn Learning：Advanced AI: Transformers for Computer Vision
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            LinkedIn Learning：What Is Generative AI?
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-users text-warning"></i></span>
+                            中原大學資工之夜工作人員
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
