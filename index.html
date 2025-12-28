@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人簡介 | [您的姓名]</title>
+    <style>
+        /* 基本樣式設定 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 卡片容器 */
+        .container {
+            background: #fff;
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* 頭像佔位符 */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about {
+            text-align: left;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* 技能標籤 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .skill-tag {
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* 聯絡按鈕 */
+        .contact-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://via.placeholder.com/150" alt="個人照" class="profile-img">
+    
+    <h1>[您的姓名]</h1>
+    <div class="subtitle">[您的職位或目前身份，例如：軟體工程師 / 學生]</div>
+
+    <div class="about">
+        <h3>關於我</h3>
+        <p>
+            這裡可以填寫你的簡短自我介紹。例如：我熱衷於解決複雜的技術問題，專注於 Web 開發與機器學習。在閒暇之餘，我喜歡探索新科技或參與開源專案。
+        </p>
+    </div>
+
+    <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Git</span>
+    </div>
+
+    <a href="mailto:yourname@example.com" class="contact-btn">與我聯絡</a>
+</div>
+
+</body>
+</html>
